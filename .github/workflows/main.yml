@@ -51,5 +51,5 @@ jobs:
            docker stop go-htmx-container
            echo "old container stopped and removed"
            # Run image and open port
-           docker container run --name go-htmx-container --rm -it -e PORT=8000 -e INSTANCE_ID="go-htmx-instance" -p 8000:8000 mochdhany25/go-htmx  
+           docker container run --name go-htmx-container --rm -e PORT=8000 -e INSTANCE_ID="go-htmx-instance" -p 8000:8000 mochdhany25/go-htmx  
            echo "container started succesfully"
